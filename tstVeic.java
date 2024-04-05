@@ -4,21 +4,17 @@ public class TstVeic{
 
         Veiculo v1 = new Veiculo();
         Leitura l = new Leitura();
+        Esportivo e1 = new Esportivo();
 
-        v1.setValor(Integer.parseInt(l.entDados("\nVALOR.: ")));
-        v1.setPlaca(l.entDados("\nPLACA..: "));
-        v1.setMarca(l.entDados("\nMARCA..: "));
-
-        v1.getMotor().setMaterial(l.entDados("MATERIAL: "));
-        v1.getMotor().setPotencia(Integer.parseInt(l.entDados(/"POTENCIA: ")));
-
-        System.out.println("\nVALOR.: "+v1.getValor());
-        System.out.println("\nPLACA: "+v1.getPlaca());
-        System.out.println("\nMARCA: "+v1.getMarca());
-
-        System.out.println("\nMATERIAL.: "+v1.getMotor().getMaterial());
-        System.out.println("\nPOTENCIA: "+v1.getMotor().getPotencia());
-
+        e1.setNome(l.entDados("\nNome: "));
+        e1.setValor(Integer.parseInt(l.entDados("\nValor")));
+        e1.setMarca(l.entDados("\nMarca: "));
+        e1.setVelocidadeMax(Integer.parseInt(l.entDados("\nVelocidade max: ")));
+        
+        System.out.println("\nNOME.: "+e1.getNome());
+        System.out.println("\nVALOR.: "+e1.getValor());
+        System.out.println("\nMARCA.: "+e1.getMarca());
+        System.out.println("\nVelocidade max.: "+e1.getVelocidadeMax());
 	}
 
 }

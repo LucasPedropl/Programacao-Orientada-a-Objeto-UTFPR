@@ -10,23 +10,12 @@ public class Veiculo{
 	public int getValor(){
 		return valor;
 	}
-
-	public String getPlaca(){
-		return placa;
-	}
-
     public String getMarca(){
 		return marca;
 	}
-	
 	public void setValor(int valor){
 		this.valor = valor;
 	}
-	
-	public void setPlaca(String placa){
-		this.placa = placa;
-	}
-
     public void setMarca(String marca){
 		this.marca = marca;
 	}
