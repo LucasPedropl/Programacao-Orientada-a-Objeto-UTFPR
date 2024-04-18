@@ -6,22 +6,18 @@ public class Aluno extends Pessoa{
 
 //================================================
 
-	public void impDados(){
+	public void impDados(int s){
 
 System.out.println("\n impDados da CLASSE-FILHA ALUNO");
 	
-	}
-
-	public void call_Met_Mae(){
-		super.impDados();
-	}
+}
 
 //================================================
 
 
-	public void impCpfFilha(){
-		System.out.println("\nimpressão do CPF NA CLASSE FILHA: "+ cpf);
-	}
+	//public void impCpfFilha(){
+	//	System.out.println("\nimpressão do CPF NA CLASSE //FILHA: "+ cpf);
+	//}
 
 	public int getRa(){
 		return ra;

@@ -1,6 +1,6 @@
-public class Pessoa{
+public abstract class Pessoa{
 
-	protected int cpf;
+	private int cpf;
 
 	private int segSoc;
 	private String nome;
@@ -9,11 +9,7 @@ public class Pessoa{
 
 //================================================
 
-	public void impDados(){
-
-System.out.println("\n impDados da classe-mae PESSOA");
-	
-	}
+	public abstract void impDados();
 
 //================================================
 	
