@@ -11,13 +11,13 @@ public class ContLetPedroLucas {
         char letra = letraInput.charAt(0);
 
         
-        letra = Character.toLowerCase(letra);
+        letra = TstChar.toLowerCase(letra);
 
         
         int ocorrencias = 0;
         StringBuilder posicoes = new StringBuilder();
         for (int i = 0; i < frase.length(); i++) {
-            char caractere = Character.toLowerCase(frase.charAt(i));
+            char caractere = TstChar.toLowerCase(frase.charAt(i));
             if (caractere == letra) {
                 ocorrencias++;
                 posicoes.append(i + 1).append(" ");

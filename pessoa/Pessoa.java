@@ -1,10 +1,8 @@
 public abstract class Pessoa{
 
 	private int cpf;
-
 	private int segSoc;
 	private String nome;
-
 	private Endereco ender;
 
 //================================================
