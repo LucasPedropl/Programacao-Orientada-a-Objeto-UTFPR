@@ -1,7 +1,7 @@
 public class Endereco{
 
-	private int num = 0;
-	private String rua = "";
+	private int num;
+	private String rua;
 
 	public int getNum(){
 		return num;

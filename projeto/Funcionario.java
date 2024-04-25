@@ -1,43 +1,21 @@
-public class Funcionario extends Pessoa{ 
+public class Funcionario extends Pessoa{
 
-	private int id;
-	private String departamento;
+	private int codFun;
+	private String cargo;
 
-
-//================================================
-
-	public void impDados(){
-
-System.out.println("\n impDados da CLASSE-FILHA Funcionario");
-	
+	public int getCodFun() {
+		return codFun;
 	}
 
-	public void call_Met_Mae(){
-		super.impDados();
+	public String getCargo() {
+		return cargo;
 	}
 
-//================================================
-
-
-	public void impCpfFilha(){
-		System.out.println("\nimpressão do CPF NA CLASSE FILHA: "+ cpf);
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
 	}
 
-	public int getID(){
-		return id;
-	}
-
-	public String getDepartamento(){
-		return departamento;
-	}
-
-	
-	public void setID(int id){
-		this.id = id;
-	}
-	
-	public void setDepartamento(String departamento){
-		this.departamento = departamento;
+	public void setCodFun(int codFun) {
+		this.codFun = codFun;
 	}
 }
-
