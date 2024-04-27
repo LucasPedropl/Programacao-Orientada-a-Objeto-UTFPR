@@ -1,3 +1,6 @@
+//PEDRO LUCAS DA SILVA MOTA
+//a2565943
+
 public class TstEmp {
 
 	public static void main(String[] arg) {
@@ -13,10 +16,10 @@ public class TstEmp {
 				p1.setCpf(Integer.parseInt(l.entDados("\nDigite o CPF")));
 				condition = false;
 	
-			} catch (CpfPeqException cpf) {
+			} catch (ExeptionInvalidCpf cpf) {
 				System.out.println("\nO CPF deve ser maior que 0");
 	
-			} catch (NomeGrandeException nge) {
+			} catch (ExeptionNomeGrande nge) {
 				System.out.println("\nO nome deve ter menos de 10 letras");
 	
 			}

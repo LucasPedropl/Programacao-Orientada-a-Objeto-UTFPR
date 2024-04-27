@@ -1,3 +1,6 @@
+//PEDRO LUCAS DA SILVA MOTA
+//a2565943
+
 public class Funcionario extends Pessoa{
 
 	private int codFun;
