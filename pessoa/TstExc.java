@@ -11,7 +11,7 @@ public class TstExc {
 			vai = false;
 		}
 
-		catch (ExeptionInvalidCpf cpe) {
+		catch (ExceptionInvalidCpf cpe) {
 			System.out.println("\nCATCH do CPF pequeno");
 		}
 

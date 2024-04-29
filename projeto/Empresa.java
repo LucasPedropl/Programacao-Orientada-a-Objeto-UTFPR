@@ -2,10 +2,17 @@
 //a2565943
 
 public class Empresa {
-    private int cnpj;
+    private String cnpj;
     private String nome;
+    private Pessoa pessoa;
 
-    public int getCnpj(){
+    public Empresa(){
+        this.cnpj = "";
+        this.nome = "";
+        this.pessoa = new Pessoa();
+    }
+
+    public String getCnpj(){
         return cnpj;
     }
 
@@ -13,15 +20,27 @@ public class Empresa {
         return nome;
     }
 
-    public void setCnpj(int cnpj) throws ExeptionInvalidCnpj{
-        if(Integer.toString(cnpj).length() == 14){
-            this.cnpj = cnpj;this.cnpj = cnpj;
+    public Pessoa getPessoa() {
+        return pessoa;
+    }
+
+    public void setPessoa(Pessoa pessoa) {
+        this.pessoa = pessoa;
+    }
+
+    public void setCnpj(String cnpj) throws ExceptionInvalidCnpj{
+        if(cnpj.length() == 14){
+            this.cnpj = cnpj;
         }else{
-            throw new ExeptionInvalidCnpj();
+            throw new ExceptionInvalidCnpj();
         }
     }
 
-    public void setNome(String nome){
-        this.nome = nome;
-    }
+    public void setNome(String nome) throws ExceptionInvalidNome{
+		if(nome.length() > 0 && nome.length() < 20){
+			this.nome = nome;
+		}else{
+			throw new ExceptionInvalidNome();
+		}
+	}
 }

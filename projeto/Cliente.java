@@ -3,22 +3,42 @@
 
 public class Cliente extends Pessoa{
 
-    private int codCliente;
-    private String nomeProjeto;
+    private String codCliente;
+    private int numProjetos;
+    private Projeto projeto;
 
-    public int getCodCliente() {
+    public Cliente(){
+        codCliente = "";
+        numProjetos = 0;
+        projeto = new Projeto();
+    }
+
+    public String getCodCliente() {
         return codCliente;
     }
 
-    public String getNomeProjeto() {
-        return nomeProjeto;
+    public int getnumProjetos() {
+        return numProjetos;
     }
 
-    public void setCodCliente(int codCliente) {
+    public Projeto getProjeto() {
+        return projeto;
+    }
+
+    public void setProjeto(Projeto projeto) {
+        this.projeto = projeto;
+    }
+
+    public void setCodCliente(String codCliente) throws ExceptionInvalidCodCli{
         this.codCliente = codCliente;
+        if(codCliente.length() > 0){
+            this.codCliente = codCliente;
+        }else{
+            throw new ExceptionInvalidCodCli();
+        }
     }
 
-    public void setNomeProjeto(String nomeProjeto) {
-        this.nomeProjeto = nomeProjeto;
+    public void setnumProjetos(int numProjetos) {
+        this.numProjetos = numProjetos;
     }
 }
