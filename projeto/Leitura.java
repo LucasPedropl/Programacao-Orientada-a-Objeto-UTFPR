@@ -5,23 +5,20 @@ import java.io.InputStreamReader;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class Leitura{
+public class Leitura {
 
-
-	public String entDados(String rotulo){
+	public String entDados(String rotulo) {
 
 		System.out.println(rotulo);
-	
-InputStreamReader teclado = new InputStreamReader(System.in);
-BufferedReader buff = new BufferedReader(teclado);
 
-		
+		InputStreamReader teclado = new InputStreamReader(System.in);
+		BufferedReader buff = new BufferedReader(teclado);
+
 		String ret = "";
 
-		try{
+		try {
 			ret = buff.readLine();
-		}
-		catch(IOException ioe){
+		} catch (IOException ioe) {
 			System.out.println("\nERRO");
 		}
 
@@ -29,4 +26,3 @@ BufferedReader buff = new BufferedReader(teclado);
 	}
 
 }
-

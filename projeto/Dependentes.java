@@ -1,4 +1,7 @@
-public class Dependentes {
+//PEDRO LUCAS DA SILVA MOTA
+//a2565943
+
+public class Dependentes extends Pessoa{
     private String Familiaridade;
     private String codFun;
 

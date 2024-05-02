@@ -1,16 +1,22 @@
 //PEDRO LUCAS DA SILVA MOTA
 //a2565943
 
-public class Cliente extends Pessoa{
+public class Cliente extends Pessoa implements InterfaceContato{
 
     private String codCliente;
     private int numProjetos;
     private Projeto projeto;
+    private String email;
+    private String telefone;
+    private String celular;
 
     public Cliente(){
         codCliente = "";
         numProjetos = 0;
         projeto = new Projeto();
+        email = "";
+        telefone = "";
+        celular = "";
     }
 
     public String getCodCliente() {
@@ -40,5 +46,32 @@ public class Cliente extends Pessoa{
 
     public void setnumProjetos(int numProjetos) {
         this.numProjetos = numProjetos;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public String getCelular() {
+        return celular;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+        
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+        
+    }
+
+    public void setCelular(String celular) {
+        this.celular = celular;
+        
     }
 }

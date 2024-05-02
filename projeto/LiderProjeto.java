@@ -1,16 +1,22 @@
 //PEDRO LUCAS DA SILVA MOTA
 //a2565943
 
-public class LiderProjeto extends Pessoa{
+public class LiderProjeto extends Pessoa implements InterfaceContato{
 
 	private String codFun;
 	private String senioridade ;
 	private Dependentes dependente;
+	private String email;
+    private String telefone;
+    private String celular;
 
 	public LiderProjeto(){
 		this.codFun = "";
 		this.senioridade  = "";
 		this.dependente = new Dependentes();
+		email = "";
+        telefone = "";
+        celular = "";
 	}
 
 	public String getCodFun() {
@@ -41,4 +47,31 @@ public class LiderProjeto extends Pessoa{
             throw new ExceptionInvalidCodFun();
         }
 	}
+
+	public String getEmail() {
+        return email;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public String getCelular() {
+        return celular;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+        
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+        
+    }
+
+    public void setCelular(String celular) {
+        this.celular = celular;
+        
+    }
 }

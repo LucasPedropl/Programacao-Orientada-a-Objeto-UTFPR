@@ -4,12 +4,16 @@
 public class Empresa {
     private String cnpj;
     private String nome;
-    private Pessoa pessoa;
+    private Cliente cliente;
+    private LiderProjeto lider;
+    private Projeto projeto;
 
     public Empresa(){
         this.cnpj = "";
         this.nome = "";
-        this.pessoa = new Pessoa();
+        this.cliente = new Cliente();
+        this.lider = new LiderProjeto();
+        this.projeto = new Projeto();
     }
 
     public String getCnpj(){
@@ -20,12 +24,28 @@ public class Empresa {
         return nome;
     }
 
-    public Pessoa getPessoa() {
-        return pessoa;
+    public Pessoa getCliente() {
+        return cliente;
     }
 
-    public void setPessoa(Pessoa pessoa) {
-        this.pessoa = pessoa;
+    public LiderProjeto getLider() {
+        return lider;
+    }
+
+    public Projeto getProjeto() {
+        return projeto;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public void setLider(LiderProjeto lider) {
+        this.lider = lider;
+    }
+
+    public void setProjeto(Projeto projeto) {
+        this.projeto = projeto;
     }
 
     public void setCnpj(String cnpj) throws ExceptionInvalidCnpj{
